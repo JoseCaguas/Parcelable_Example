@@ -1,7 +1,12 @@
 package in.wptrafficanalyzer.parcelobjectdemo;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     EditText mEtSName;
@@ -10,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     EditText mEtSCourse;
     Button mBtnOk;
 
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnOk = (Button)findViewById(R.id.btn_ok);
 
         // Setting onClick event listener for the "OK" button
-        mBtnOk.setOnClickListener(new OnClickListener() {
+        mBtnOk.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
